@@ -73,9 +73,15 @@
   <h2 class="text-white mb-2 lh-condensed">Features</h2>
   <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;1.&nbsp;Transforms image of prescription into text using Optical Character Recognition.</p>
   <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;2.&nbsp;Ensures incorruptibility of stored document by pushing hash of text generated from the prescription uploaded by patient/doctor in blockchain.</p>
-  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;3.&nbsp;Can recognise pneumonia in common X-Rays uploaded by patient/doctor.
-  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;4.&nbsp;A dashboard to access all the medical records.
-</p>
+  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;3.&nbsp;Can recognise pneumonia in common X-Rays uploaded by patient/doctor.</p>
+  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;4.&nbsp;A dashboard to access all the medical records.</p>
+  &nbsp;
+  <h2 class="text-white mb-2 lh-condensed">Workflow</h2>
+  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;1.&nbsp;Users upload prescriptions in image format. The system extracts text out of it using OCR.</p>
+  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;2.&nbsp;Once the prescription is converted to text, the server generates a hash of the document and publishes it on a ethereum blockchain.</p>
+  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;3.&nbsp;When user wants to retrieve a document uploaded earlier, the server will match the hash of the document(the user wants to retrieve) with the hash present in the blockchain.</p>
+  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;4.&nbsp;If the two hashes are same, it means that the document is not tampered with.</p>
+  <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;5.&nbsp;If the two hashes are different, the user is alerted about it and is given an option to reupload the document.</p>
   &nbsp;
   <h2 class="text-white mb-2 lh-condensed">Technology Stack</h2>
   <p class="text-white  lh-condensed" style="font-size: 18px;">&nbsp;&nbsp;&nbsp;1.&nbsp;Django framework (for backend)</p>
