@@ -20,6 +20,9 @@
 </p>
   <div class="f4 mb-6">
       <div class="d-flex flex-items-center mb-3 text-white">
+        Software Development Intern at HackerRank
+      </div>
+      <div class="d-flex flex-items-center mb-3 text-white">
         Final Year Computer Science Student at Sardar Patel Institute Of Technology
       </div>
       <div class="d-flex flex-items-center mb-3 text-white">
@@ -71,21 +74,45 @@
 
 <div>
   <h1 class="text-white mb-2 lh-condensed">MeghNA</h1>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">MeghNA is a cloud analytics engine offering cloud detection and cloud motion prediction on satellite images from INSAT 3D. This project is being made as a part of SIH 2020. The problem statement is provided by ISRO.</p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">MeghNA is a cloud analytics engine offering cloud detection and cloud motion prediction on satellite images from INSAT 3D. This project was made as a part of SIH 2020. The problem statement is provided by ISRO.</p>
   &nbsp;
   <h2 class="text-white mb-2 lh-condensed">Features</h2>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;1.&nbsp;Cloud detection </p>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;2.&nbsp;Nowcasting: Cloud Motion Prediction</p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;1.&nbsp;Cloud detection with Mask RCNN and KNN </p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;2.&nbsp;Nowcasting: Cloud Motion Prediction with CNN+LSTM</p>
   <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;3.&nbsp;Cloud Classification</p>
   <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;4.&nbsp;Cloud Attributes</p>
   &nbsp;
   <h2 class="text-white mb-2 lh-condensed">Technology Stack</h2>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;1.&nbsp;Frontend : Angular </p>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;2.&nbsp;Mobile App : Flutter</p>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;3.&nbsp;Deep Learning: Tensorflow, Keras</p>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;4.&nbsp;Backend : Django Rest Framework</p>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;5.&nbsp;OpenCV</p>
-  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;6.&nbsp;Gdal and Rasterio</p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;1.&nbsp;Frontend : Angular for the Webpage of Cloud Analytics Engine</p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;2.&nbsp;Mobile App : Flutter for the Mobile App Version</p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;3.&nbsp;Deep Learning: Tensorflow, Keras for Cloud Detection and Motion Prediction</p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;4.&nbsp;Backend : Django Rest Framework for the Backend API</p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;5.&nbsp;OpenCV for image processing</p>
+  <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;6.&nbsp;Gdal and Rasterio for converting tif images to jpeg</p>
   <p class="text-white  lh-condensed" style="font-size: 19px;">&nbsp;&nbsp;&nbsp;7.&nbsp;SQLite</p>
   &nbsp;
+  <h2 class="text-white mb-2 lh-condensed">Cloud Detection with Mask RCNN</h2>
+  <div class="row">
+    <div class="column">
+      <p class="text-white  lh-condensed" style="font-size: 19px;"> Input image of Cloud</p>
+      <img src="/assets/satellite1.jpg" alt="Snow" style="display:block; margin-left: auto; margin-right: auto; max-width: 100%; height:300px; ">
+    </div>
+    <div class="column">
+      <p class="text-white  lh-condensed" style="font-size: 19px;"> Detected Major Cloud protions</p>
+      <img src="/assets/mask.png" alt="Forest" style="display:block; margin-left: auto; margin-right: auto; max-width: 100%; height:300px; ">
+    </div>
+  </div>
+  <br>
+  <br>
+  <h2 class="text-white mb-2 lh-condensed">Cloud Motion Prediction with CNN+LSTM</h2>
+  <div class="row">
+    <div class="column">
+      <p class="text-white  lh-condensed" style="font-size: 19px;"> Original Stream of Clouds</p>
+      <img src="/assets/input.gif" alt="Snow" style="display:block; margin-left: auto; margin-right: auto; max-width: 100%; height:300px; ">
+    </div>
+    <div class="column">
+      <p class="text-white  lh-condensed" style="font-size: 19px;"> Predicted Stream of Clouds</p>
+      <img src="/assets/output.gif" alt="Forest" style="display:block; margin-left: auto; margin-right: auto; max-width: 100%; height:300px; ">
+    </div>
+  </div>
 </div>
